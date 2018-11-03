@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #12205c;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  padding: 5px 80px;
+  background: #12205c;
+  border: 2px solid #949292;
+  border-radius: 20px;
+  margin-top: 8px;
+  font-weight: 800;
+  list-style: none;
+}
+ul li:hover {
+  background: blue;
+}
+ul li a {
+  text-decoration: none;
+  color: #949292;
+}

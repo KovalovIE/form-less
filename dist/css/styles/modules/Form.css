@@ -1,0 +1,82 @@
+.Button {
+  background: #64d4d8;
+  border: 1px solid darkgrey;
+  padding: 12px;
+  color: white;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.Button--margin {
+  margin-left: -5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.Form-table {
+  border-spacing: 0;
+}
+.Form-block-left {
+  width: 150px;
+}
+.Form-block-left--resize {
+  width: 108px;
+}
+.Form-block-right {
+  width: 270px;
+}
+.Form-block-right--resize {
+  width: 120px;
+}
+.Form-tr {
+  background: #d3d3d3;
+}
+.Form-tr:nth-child(2n) {
+  background: #878787;
+}
+.Form-tr--custom {
+  height: 100px;
+}
+.Form-td {
+  padding: 5px 0;
+}
+.Form-input-text,
+.Form-input-password,
+.Form-input-email,
+.Form-input-number,
+.Form-select {
+  width: 160px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 25px;
+}
+.Form-input-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: grey;
+  border: 5px solid grey;
+  border-radius: 50%;
+}
+.Form-input-radio:checked {
+  background-color: #07cdf6;
+  border: 5px solid #07cdf6;
+  border-radius: 50%;
+}
+.Form-ul {
+  list-style: none;
+}
+.Form-textarea {
+  width: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.Form-label {
+  margin-left: 5px;
+}

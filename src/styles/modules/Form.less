@@ -1,0 +1,86 @@
+@import "Button";
+@import "Mixins";
+@import "Variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .form-position()
+}
+
+.Form {
+  &-table {
+    border-spacing: @table-border-space;
+  }
+  &-block-left {
+    width: @table-block-left;
+
+    &--resize {
+      width: 108px
+    }
+  }
+  &-block-right {
+    width: @table-block-right;
+
+    &--resize {
+      width: 120px;
+    }
+  }
+
+  &-tr {
+    background: #d3d3d3;
+
+    &:nth-child(2n) {
+      background: #878787;
+    }
+
+    &--custom {
+      height: 100px;
+    }
+  }
+  &-td {
+    padding: 5px 0;
+  }
+
+  &-input-text,
+  &-input-password,
+  &-input-email,
+  &-input-number,
+  &-select {
+    .input-custom-size()
+  }
+
+  &-input-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: @custom-input-radio-bg;
+    border: 5px solid @custom-input-radio-bg;
+    border-radius: 50%;
+  }
+  &-input-radio:checked {
+    background-color: @custom-input-radio-bg-checked;
+    border: 5px solid @custom-input-radio-bg-checked;
+    border-radius: 50%;
+  }
+
+  &-ul {
+    list-style: none;
+  }
+
+  &-textarea {
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &-label {
+    margin-left: 5px;
+  }
+}
